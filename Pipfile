@@ -10,6 +10,8 @@ pylint = "*"
 [packages]
 django = "*"
 djangorestframework = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.8"
