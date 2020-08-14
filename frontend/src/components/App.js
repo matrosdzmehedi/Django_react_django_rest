@@ -6,14 +6,14 @@ import Footer from "./Footer";
 class App extends Component {
   render() {
     return (
-      <>
+      <div>
         <BrowserRouter>
           <Navbar />
         </BrowserRouter>
 
         <div className="container"></div>
         <Footer />
-      </>
+      </div>
     );
   }
 }
