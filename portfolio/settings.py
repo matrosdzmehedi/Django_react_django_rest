@@ -14,9 +14,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import dj_database_url
 from pathlib import Path
 import os
-import django_heroku
 
-import psycopg2
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
@@ -28,7 +26,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '&45ht$c9*1yo4zy^-cu36rb$qn*l+4zop9mvv4trd-mgd7r)o!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*', 'reactdjangodrf.herokuapp.com']
 
@@ -166,23 +164,3 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ]
 }
-
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
-        },
-    },
-}
-conn = psycopg2.connect(
-    'postgres://chobqdjblmucnh:abe735526375e0d9425ae96d0a8c54aa63ef72920e927ad530b58f27436754cb@ec2-184-72-162-198.compute-1.amazonaws.com:5432/dadah806u32s9e', sslmode='require')
-django_heroku.settings(locals())
