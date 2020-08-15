@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '&45ht$c9*1yo4zy^-cu36rb$qn*l+4zop9mvv4trd-mgd7r)o!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -154,12 +154,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #     ]
 # }
 
+# REST_FRAMEWORK = {
+#   'DEFAULT_PERMISSION_CLASSES': [
+#    'rest_framework.permissions.AllowAny', ]}
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny', ]}
-
-# REST_FRAMEWORK = {
-#    'DEFAULT_PERMISSION_CLASSES': [
-#        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-#    ]
-# }
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ]
+}

@@ -7,7 +7,7 @@ export default class Blog extends Component {
   };
 
   componentDidMount() {
-    axios.get(`http://localhost:8000/api/post`).then((res) => {
+    axios.get(`https://reactdjangodrf.herokuapp.com/api/post`).then((res) => {
       const post = res.data;
       this.setState({ post });
     });
