@@ -28,7 +28,7 @@ SECRET_KEY = '&45ht$c9*1yo4zy^-cu36rb$qn*l+4zop9mvv4trd-mgd7r)o!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'reactdjangodrf.herokuapp.com']
+ALLOWED_HOSTS = ['reactdjangodrf.herokuapp.com']
 
 
 # Application definition
