@@ -54,11 +54,11 @@ export default class Portfolio extends Component {
               <h5>What I Know</h5>
               <hr />
               <p>
-                Language: Python, Django, HTML, CSS(mild), JavaScript(ES6),
+                Language: Python, Django, HTML5, CSS3, Bootstrap4 ,JavaScript(ES6),
                 React, Java(basic)
               </p>
-              <p>SQL: Mysql, MongoDB </p>
-              <p>VCS: GIT </p>
+              <p>SQL: Mysql, Postgresql, MongoDB </p>
+              <p>VCS: GITHUB </p>
               <p>Working Environment/OS: Linux.</p>
             </div>
           </div>
