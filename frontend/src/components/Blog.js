@@ -17,7 +17,7 @@ export default class Blog extends Component {
     return (
       <div className="container">
         {this.state.post.map((post) => (
-          <div>
+          <div class="col-6">
             <div className="card">
               <div className="card-header text-center">
                 <h4>{post.title}</h4>
